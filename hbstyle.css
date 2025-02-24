@@ -254,6 +254,294 @@ body {
 
 .hb-form-check-label { margin-bottom: 0; }
 
+/* Typography Utilities */
+.hb-font-light {
+  font-weight: 300;
+}
+
+.hb-font-regular {
+  font-weight: 400;
+}
+
+.hb-font-semibold {
+  font-weight: 600;
+}
+
+.hb-font-extrabold {
+  font-weight: 800;
+}
+
+.hb-letter-spacing-normal {
+  letter-spacing: normal;
+}
+
+.hb-letter-spacing-wide {
+  letter-spacing: 0.1rem;
+}
+
+.hb-line-height-tight {
+  line-height: 1.2;
+}
+
+.hb-line-height-loose {
+  line-height: 1.8;
+}
+
+/* Positioning Utilities */
+.hb-position-relative {
+  position: relative;
+}
+
+.hb-position-absolute {
+  position: absolute;
+}
+
+.hb-position-fixed {
+  position: fixed;
+}
+
+.hb-position-sticky {
+  position: sticky;
+}
+
+.hb-top-0 {
+  top: 0;
+}
+
+.hb-top-50 {
+  top: 50%;
+}
+
+.hb-top-100 {
+  top: 100%;
+}
+
+.hb-right-0 {
+  right: 0;
+}
+
+.hb-left-0 {
+  left: 0;
+}
+
+.hb-z-index-1 {
+  z-index: 1;
+}
+
+.hb-z-index-10 {
+  z-index: 10;
+}
+
+.hb-z-index-100 {
+  z-index: 100;
+}
+
+/* Overflow Utilities */
+.hb-overflow-auto {
+  overflow: auto;
+}
+
+.hb-overflow-hidden {
+  overflow: hidden;
+}
+
+.hb-overflow-scroll {
+  overflow: scroll;
+}
+
+.hb-overflow-x-auto {
+  overflow-x: auto;
+}
+
+.hb-overflow-y-auto {
+  overflow-y: auto;
+}
+
+.hb-overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.hb-overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+/* Transition Utilities */
+.hb-transition {
+  transition: all 0.3s ease;
+}
+
+.hb-transition-opacity {
+  transition: opacity 0.3s ease;
+}
+
+.hb-transition-transform {
+  transition: transform 0.3s ease;
+}
+
+.hb-transition-background-color {
+  transition: background-color 0.3s ease;
+}
+
+/* Animation Utilities */
+.hb-animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hb-animate-slide-up {
+  animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Visibility Utilities */
+.hb-visible {
+  visibility: visible;
+}
+
+.hb-hidden {
+  visibility: hidden;
+}
+
+.hb-display-block {
+  display: block;
+}
+
+.hb-display-inline-block {
+  display: inline-block;
+}
+
+.hb-display-none {
+  display: none;
+}
+
+/* Flexbox Utilities - Advanced */
+.hb-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.hb-flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.hb-flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.hb-flex-grow {
+  flex-grow: 1;
+}
+
+.hb-flex-shrink {
+  flex-shrink: 1;
+}
+
+.hb-flex-auto {
+  flex: 1 1 auto;
+}
+
+/* Grid Layout Enhancements */
+.hb-grid-template-columns-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.hb-grid-template-columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hb-grid-template-columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hb-grid-template-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hb-grid-gap-1 {
+  grid-gap: 0.5rem;
+}
+
+.hb-grid-gap-2 {
+  grid-gap: 1rem;
+}
+
+.hb-grid-gap-3 {
+  grid-gap: 1.5rem;
+}
+
+.hb-grid-row-gap-1 {
+  grid-row-gap: 0.5rem;
+}
+
+.hb-grid-column-gap-1 {
+  grid-column-gap: 0.5rem;
+}
+
+/* Tooltip Styling */
+.hb-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.hb-tooltip .hb-tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hb-tooltip:hover .hb-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Custom Scrollbar */
+.hb-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #007bff #f8f9fa;
+}
+
+.hb-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.hb-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+.hb-scrollbar::-webkit-scrollbar-track {
+  background-color: #f8f9fa;
+}
+
+
 /* Responsive Breakpoints */
 @media (max-width: 768px) {
   .hb-flex-sm { display: flex; }
