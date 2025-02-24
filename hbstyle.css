@@ -564,3 +564,86 @@ body {
     flex: 0 0 16.66667%;
   }
 }
+/* List Styles */
+.hb-list {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.hb-list-item {
+  margin-bottom: 0.5rem;
+}
+
+.hb-list-item::before {
+  content: "•";
+  color: #007bff;
+  margin-right: 0.5rem;
+}
+
+.hb-unstyled-list {
+  list-style: none;
+}
+
+.hb-ordered-list {
+  list-style: decimal;
+}
+
+/* Add specific margin or padding to list items */
+.hb-list-m-1 {
+  margin: 0.25rem;
+}
+
+.hb-list-m-2 {
+  margin: 0.5rem;
+}
+
+.hb-list-m-3 {
+  margin: 1rem;
+}
+
+.hb-list-m-4 {
+  margin: 1.5rem;
+}
+
+.hb-list-m-5 {
+  margin: 2rem;
+}
+
+.hb-list-p-1 {
+  padding: 0.25rem;
+}
+
+.hb-list-p-2 {
+  padding: 0.5rem;
+}
+
+.hb-list-p-3 {
+  padding: 1rem;
+}
+
+.hb-list-p-4 {
+  padding: 1.5rem;
+}
+
+.hb-list-p-5 {
+  padding: 2rem;
+}
+
+/* Responsive List Layout */
+@media (max-width: 768px) {
+  .hb-list-sm {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .hb-list-md {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hb-list-lg {
+    display: block;
+  }
+}
