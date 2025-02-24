@@ -410,6 +410,173 @@ body {
     opacity: 1;
   }
 }
+/* List Utilities */
+
+/* General List Styling */
+.hb-list {
+  padding-left: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+.hb-list-item {
+  margin-bottom: 0.5rem;
+}
+
+.hb-list-item::before {
+  content: "•";
+  color: #007bff;
+  margin-right: 0.5rem;
+}
+
+.hb-unstyled-list {
+  list-style: none;
+}
+
+.hb-ordered-list {
+  list-style: decimal;
+}
+
+.hb-circle-list {
+  list-style: circle;
+}
+
+.hb-square-list {
+  list-style: square;
+}
+
+/* List Item Alignment */
+.hb-list-align-start {
+  text-align: left;
+}
+
+.hb-list-align-center {
+  text-align: center;
+}
+
+.hb-list-align-end {
+  text-align: right;
+}
+
+/* List Spacing */
+.hb-list-m-1 {
+  margin: 0.25rem;
+}
+
+.hb-list-m-2 {
+  margin: 0.5rem;
+}
+
+.hb-list-m-3 {
+  margin: 1rem;
+}
+
+.hb-list-m-4 {
+  margin: 1.5rem;
+}
+
+.hb-list-m-5 {
+  margin: 2rem;
+}
+
+.hb-list-p-1 {
+  padding: 0.25rem;
+}
+
+.hb-list-p-2 {
+  padding: 0.5rem;
+}
+
+.hb-list-p-3 {
+  padding: 1rem;
+}
+
+.hb-list-p-4 {
+  padding: 1.5rem;
+}
+
+.hb-list-p-5 {
+  padding: 2rem;
+}
+
+/* List Hover Effects */
+.hb-list-item:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+/* Nested List Styles */
+.hb-nested-list {
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+.hb-nested-list-item {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.hb-nested-list-item::before {
+  content: "→";
+  color: #007bff;
+  position: absolute;
+  left: -1rem;
+}
+
+/* Responsive List Layout */
+@media (max-width: 768px) {
+  .hb-list-sm {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .hb-list-md {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hb-list-lg {
+    display: block;
+  }
+}
+
+/* Custom Bullet and Number Styling */
+.hb-list-custom-bullet {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.hb-list-custom-bullet li::before {
+  content: "★";
+  color: #007bff;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Custom Ordered List Styling */
+.hb-ordered-list-custom {
+  list-style-type: none;
+  counter-reset: item;
+}
+
+.hb-ordered-list-custom li {
+  display: block;
+  margin-bottom: 0.5rem;
+  position: relative;
+  counter-increment: item;
+}
+
+.hb-ordered-list-custom li::before {
+  content: counter(item) ". ";
+  position: absolute;
+  left: -1.5rem;
+  color: #007bff;
+  font-weight: bold;
+}
 
 /* Visibility Utilities */
 .hb-visible {
