@@ -30,7 +30,112 @@ body {
     background-color: #0056b3; /* Darker blue for hover effect */
     border-radius: 4px;
 }
+/* Background Color Utilities */
+.hb-bg-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+}
 
+.hb-bg-secondary {
+    background-color: #6c757d; /* Bootstrap secondary color */
+}
+
+.hb-bg-success {
+    background-color: #28a745; /* Bootstrap success color */
+}
+
+.hb-bg-danger {
+    background-color: #dc3545; /* Bootstrap danger color */
+}
+
+.hb-bg-warning {
+    background-color: #ffc107; /* Bootstrap warning color */
+}
+
+.hb-bg-info {
+    background-color: #17a2b8; /* Bootstrap info color */
+}
+
+.hb-bg-light {
+    background-color: #f8f9fa; /* Bootstrap light color */
+}
+
+.hb-bg-dark {
+    background-color: #343a40; /* Bootstrap dark color */
+}
+
+/* Text Color Utilities */
+.hb-text-white {
+    color: white;
+}
+
+.hb-text-black {
+    color: black;
+}
+
+.hb-text-primary {
+    color: #007bff;
+}
+
+.hb-text-secondary {
+    color: #6c757d;
+}
+
+.hb-text-success {
+    color: #28a745;
+}
+
+.hb-text-danger {
+    color: #dc3545;
+}
+
+.hb-text-warning {
+    color: #ffc107;
+}
+
+.hb-text-info {
+    color: #17a2b8;
+}
+
+.hb-text-light {
+    color: #f8f9fa;
+}
+
+.hb-text-dark {
+    color: #343a40;
+}
+
+/* Hover Color Utilities */
+.hb-bg-primary:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+}
+
+.hb-bg-secondary:hover {
+    background-color: #5a6268; /* Darker secondary color */
+}
+
+.hb-bg-success:hover {
+    background-color: #218838; /* Darker success color */
+}
+
+.hb-bg-danger:hover {
+    background-color: #c82333; /* Darker danger color */
+}
+
+.hb-bg-warning:hover {
+    background-color: #e0a800; /* Darker warning color */
+}
+
+.hb-bg-info:hover {
+    background-color: #138496; /* Darker info color */
+}
+
+.hb-bg-light:hover {
+    background-color: #dae0e5; /* Light hover effect */
+}
+
+.hb-bg-dark:hover {
+    background-color: #1d2124; /* Dark hover effect */
+}
 /* For a mobile responsive version */
 @media (max-width: 768px) {
     .hb-nav {
