@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBF Framework</title>
+    <link rel="stylesheet" href="hbstyle.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="hb-header hb-bg-navy">
+        <a href="#" class="hb-logo">HBF School</a>
+        <button class="hb-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="hb-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+<!-- Standard Responsive Image -->
+<img src="a.jpg" alt="Responsive Image" class="hb-img">
+    <!-- Hero Section -->
+    <section class="hb-bg-light hero-section hb-text-center hb-py-5">
+        <h1 class="hb-text-dark">Welcome to HBF School</h1>
+        <p class="hb-text-muted">Empowering students with quality education.</p>
+        <button class="hb-btn hb-btn-skyblue">Get Started</button>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="hb-container">
+        <h2 class="hb-text-navy">About Us</h2>
+        <p class="hb-text-muted">HBF School is committed to providing excellent education with a focus on creativity and innovation.</p>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="hb-container">
+        <h2 class="hb-text-navy">Our Courses</h2>
+        <div class="hb-grid hb-grid-auto-fit hb-gap-3">
+            <div class="hb-card hb-bg-skyblue hb-text-white">Mathematics</div>
+            <div class="hb-card hb-bg-green hb-text-white">Science</div>
+            <div class="hb-card hb-bg-red hb-text-white">English</div>
+            <div class="hb-card hb-bg-yellow hb-text-black">Computer Science</div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <div class="hb-container hb-flex-center">
+        <div class="form-container">
+            <form class="hb-form">
+                <label for="name" class="hb-label">Name</label>
+                <input type="text" id="name" class="hb-input" placeholder="Enter your name">
+
+                <label for="email" class="hb-label">Email</label>
+                <input type="email" id="email" class="hb-input" placeholder="Enter your email">
+
+                <label for="gender" class="hb-label">Gender</label>
+                <select id="gender" class="hb-select">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button type="submit" class="hb-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+    <section id="contact" class="hb-container">
+        <h2 class="hb-text-navy">Contact Us</h2>
+        <p class="hb-text-muted">Email: info@hbf-school.com | Phone: +123 456 7890</p>
+        <button class="hb-btn hb-btn-green">Send a Message</button>
+    </section>
+
+    <!-- Shadows -->
+    <div class="hb-container">
+        <div class="hb-grid hb-grid-auto-fit hb-gap-3">
+            <div class="hb-card hb-shadow-sm">Shadow SM</div>
+            <div class="hb-card hb-shadow">Shadow Default</div>
+            <div class="hb-card hb-shadow-md">Shadow MD</div>
+            <div class="hb-card hb-shadow-lg">Shadow LG</div>
+            <div class="hb-card hb-shadow-xl">Shadow XL</div>
+            <div class="hb-card hb-shadow-none">No Shadow</div>
+        </div>
+    </div>
+    <div class="hb-table-responsive">
+        <table class="hb-table hb-table-striped hb-table-bordered hb-table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>jane@example.com</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <footer class="hb-text-white hb-bg-black hb-p-4">
+        <div class="hb-container">
+            <div class="hb-grid hb-grid-cols-3 hb-gap-3">
+                <div class="hb-bg-primary hb-text-white hb-p-3 hb-radius">
+                    <h3 class="hb-heading">About Us</h3>
+                    <p>We provide top-notch web solutions with modern technologies. Stay connected for updates.</p>
+                </div>
+                <div class="hb-bg-success hb-text-white hb-p-3 hb-radius">
+                    <h3 class="hb-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="#" class="hb-text-white">Home</a></li>
+                        <li><a href="#" class="hb-text-white">Services</a></li>
+                        <li><a href="#" class="hb-text-white">Blog</a></li>
+                        <li><a href="#" class="hb-text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="hb-bg-warning hb-text-black hb-p-3 hb-radius">
+                    <h3 class="hb-heading">Follow Us</h3>
+                    <p>
+                        <a href="#" class="hb-btn hb-btn-dark hb-mr-1">Facebook</a>
+                        <a href="#" class="hb-btn hb-btn-danger">Twitter</a>
+                    </p>
+                </div>
+            </div>
+            <div class="hb-text-center hb-mt-3 hb-bg-dark hb-text-white hb-p-2 hb-radius">
+                &copy; 2025 Your Company. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".hb-menu").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
