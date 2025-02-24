@@ -13,7 +13,7 @@ body {
 /* Basic styling for the navigation bar */
 .hb-nav {
   background:#eee;
-  coloe:black;
+  color:black;
     display: flex;
     justify-content: space-between;
     align-items: center;
